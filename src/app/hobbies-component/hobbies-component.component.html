@@ -2,7 +2,7 @@
   <div class="col-md-6">
     <ul class="skill-list">
       <li class="skills hobby-item" *ngFor="let hobby of hobbiesLeft">
-        <button class="list-button btn" type="button" name="button" [attr.disabled]="hobby.action == 'none' ? 'disabled' : null" (click)="onSelect(hobby)">
+        <button class="hobby-button btn" type="button" name="button" [attr.disabled]="hobby.action == 'none' ? 'disabled' : null" (click)="onSelect(hobby)">
           <h4>{{hobby.name}}</h4>
         </button>
         <div class="collapsible" *ngIf="hobby.action != 'none' && selectedHobby == hobby">
@@ -14,7 +14,7 @@
   <div class="col-md-6">
     <ul class="skill-list ">
       <li class="skills hobby-item" *ngFor="let hobby of hobbiesRight">
-        <button class="list-button btn" type="button" name="button" [attr.disabled]="hobby.action == 'none' ? 'disabled' : null" (click)="onSelect(hobby)">
+        <button class="hobby-button btn" type="button" name="button" [attr.disabled]="hobby.action == 'none' ? 'disabled' : null" (click)="onSelect(hobby)">
           <h4>{{hobby.name}}</h4>
         </button>
         <div class="collapsible" *ngIf="hobby.action != 'none' && selectedHobby == hobby">

@@ -117,6 +117,7 @@ padding-bottom: 2rem;
   padding-left: 0;
 }
 
+
 .contact-list{
   list-style-type: none;
   padding-left: 0;
@@ -144,6 +145,13 @@ padding-bottom: 2rem;
   text-align: center;
   margin-bottom: 0.7rem;
   color: black;
+}
+
+.hobby-button{
+  width: 100%;
+  text-align: center;
+  border-style: none;
+  color:#8e6fdc;
 }
 
 .list-button{
