@@ -1,0 +1,74 @@
+<h2 class="fl">Skills</h2>
+<div class="row mt-5">
+  <div class="col-md-6">
+    <ul class="skill-list">
+      <li class="skills" *ngFor="let skill of skillsLeft">
+        <button class="list-button btn" type="button" name="button" [attr.disabled]="skill.action == 'none' ? 'disabled' : null" (click)="onSelect(skill)">
+          <span class="skill" [class.purple]="skill.action !='none'">{{skill.name}}</span><span *ngFor="let i of range(5 - skill.proficiency)" class="fas fa-star stars star-empty"></span><span *ngFor="let i of range(skill.proficiency)" class="fas fa-star stars"></span>
+        </button>
+        <div class="collapsible" *ngIf="skill.action != 'none' && selectedSkill == skill">
+          <app-collapse-component [skill]="selectedSkill"></app-collapse-component>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul class="skill-list">
+      <li class="skills" *ngFor="let skill of skillsRight">
+        <button class="list-button btn" type="button" name="button" [attr.disabled]="skill.action == 'none' ? 'disabled' : null" (click)="onSelect(skill)">
+          <span class="skill" [class.purple]="skill.action !='none'">{{skill.name}}</span>
+          <div class="" *ngIf="skill.proficiency == 0; then noStars"></div>
+          <div class="stars" [class.star-empty]="skill.proficiency<5">
+            <span class="fas fa-star "></span>
+          </div>
+          <div class="stars" [class.star-empty]="skill.proficiency<4">
+            <span class="fas fa-star"></span>
+          </div>
+          <div class="stars" [class.star-empty]="skill.proficiency<3">
+            <span class="fas fa-star"></span>
+          </div>
+          <div class="stars" [class.star-empty]="skill.proficiency<2">
+            <span class="fas fa-star"></span>
+          </div>
+          <div class="stars" [class.star-empty]="skill.proficiency<1">
+            <span class="fas fa-star"></span>
+          </div>
+          <ng-template #noStars><div class="stars" [class.hidden]="skill.proficiency != 0">
+             <span class="fas fa-question"></span>
+          </div></ng-template>
+        </button>
+        <div class="collapsible" *ngIf="skill.action != 'none' && selectedSkill == skill">
+          <app-collapse-component [skill]="selectedSkill"></app-collapse-component>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
+<h2 class="fl">Languages</h2>
+<div class="row mt-5">
+  <div class="col-md-6">
+    <ul class="skill-list">
+      <li class="skills" *ngFor="let language of languagesLeft">
+        <button class="list-button btn" type="button" name="button" [attr.disabled]="language.action == 'none' ? 'disabled' : null" (click)="onSelect(language)">
+          <span class="skill" [class.purple]="language.action !='none'">{{language.name}}</span><span *ngFor="let i of range(5 - language.proficiency)" class="fas fa-star stars star-empty"></span><span *ngFor="let i of range(language.proficiency)" class="fas fa-star stars"></span>
+        </button>
+        <div class="collapsible" *ngIf="language.action != 'none' && selectedSkill == language">
+          <app-collapse-component [skill]="selectedSkill"></app-collapse-component>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul class="skill-list">
+      <li class="skills" *ngFor="let language of languagesRight">
+        <button class="list-button btn" type="button" name="button" [attr.disabled]="language.action == 'none' ? 'disabled' : null" (click)="onSelect(language)">
+          <span class="skill" [class.purple]="language.action !='none'">{{language.name}}</span><span *ngFor="let i of range(5 - language.proficiency)" class="fas fa-star stars star-empty"></span><span *ngFor="let i of range(language.proficiency)" class="fas fa-star stars"></span>
+        </button>
+        <div class="collapsible" *ngIf="language.action != 'none' && selectedSkill == language">
+          <app-collapse-component [skill]="selectedSkill"></app-collapse-component>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

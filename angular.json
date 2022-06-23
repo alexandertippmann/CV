@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/scripts/game.js",
+              "src/scripts/pieceSetup.js"
+            ]
           },
           "configurations": {
             "production": {

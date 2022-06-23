@@ -1,0 +1,59 @@
+body {
+  background-color: 	#1F3756;
+  background-color: 	hsl(214, 47%, 23%);
+  text-align: center;
+  color:white;
+  overflow: hidden;
+  height: 100%;
+}
+
+td {
+  background-color: #303030;
+  width:20px;
+  height:20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color:#303030;
+}
+
+table{
+  margin: 5% auto;
+}
+
+.side-content{
+  text-align: right;
+  margin-top: 10%;
+}
+
+.controls{
+  margin-top: 5%;
+}
+
+.control-text{
+  margin-top:3%;
+}
+
+@media only screen and (max-width: 576px){
+  td {
+    background-color: #303030;
+    width:25px;
+    height:25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#303030;
+  }
+}
+
+.ui-loader{
+  display: none !important;
+}
+
+table, td, .side-content {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
