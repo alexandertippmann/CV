@@ -10,7 +10,7 @@
       <p>少し日本語が話せます。</p>
     </div>
     <div class="angular" *ngSwitchCase="'angular'">
-      <p>This site was build using the Angular framework. So I will let you decide what my proficiency level should be.</p>
+      <p>This site was built using the Angular framework. So I will let you decide what my proficiency level should be.</p>
       <div class="rating-holder">
         <button class="btn rating-button star-rating-1 star-rating star-empty" [class.selected]="selectedRating == 5" type="button" name="button" value="1" (click)="click(5)"><i class="fas fa-star "></i></button>
         <button class="btn rating-button star-empty star-rating-2 star-rating" [class.selected]="selectedRating == 4" type="button" name="button" value="2"  (click)="click(4)"><i class="fas fa-star "></i></button>

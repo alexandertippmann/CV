@@ -94,6 +94,10 @@ padding-bottom: 2rem;
   text-align: right;
 }
 
+.about-p{
+  text-align: right;
+}
+
 .star-empty{
   color: #aaaaaa;
 }
@@ -152,6 +156,13 @@ padding-bottom: 2rem;
   text-align: center;
   border-style: none;
   color:#8e6fdc;
+}
+
+.hobby-button:hover:not([disabled]) {
+  color: #4b2e83;
+  background-color: #e6e6e6;
+  left: .1em;
+
 }
 
 .list-button{
