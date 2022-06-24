@@ -317,6 +317,14 @@ hr {
 
 }
 
+@media (max-width: 500px){
+
+.navblock{
+  font-size: 10px;
+}
+}
+
+
 .top-button a{
   color: #f9f9f9;
   text-decoration: none;
