@@ -28,7 +28,8 @@
             ],
             "scripts": [
               "src/scripts/game.js",
-              "src/scripts/pieceSetup.js"
+              "src/scripts/pieceSetup.js",
+              "src/scripts/navbar.js"
             ]
           },
           "configurations": {

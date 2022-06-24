@@ -3,7 +3,21 @@
   <hr>
   <h3>Interactive Resume</h3>
 </div>
-<div class="content content-light" id="Profile">
+<div class="top-button">
+  <a href="#Profile"><i class="fas fa-angle-down" style="font-size:2rem;"></i></a> 
+</div>
+<div class="sidebar-container" id="sidebar">
+  <ul>
+    <li class="navblock" id="nb-Profile"><a href="#Profile">Profile</a></li>
+    <li class="navblock" id="nb-Experiences"><a href="#Experiences">Experiences</a></li>
+    <li class="navblock" id="nb-Abilities"><a href="#Abilities">Abilities</a></li>
+    <li class="navblock" id="nb-Hobbies"><a href="#Hobbies">Hobbies</a></li>
+    <li class="navblock" id="nb-Contact"><a href="#Contact">Contact</a></li>
+
+  </ul>
+
+</div>
+<div class="content content-light section" id="Profile">
   <div class="container">
 
     <h1>Profile</h1>
@@ -35,7 +49,7 @@
   </div>
 </div>
 
-<div class="content content-contrast" id="Experiences">
+<div class="content content-contrast section" id="Experiences">
   <div class="container">
     <h1>Experiences</h1>
     <h2 class="fl">Education</h2>
@@ -67,14 +81,14 @@
   </div>
 </div>
 
-<div class="content content-light" id="Abilities">
+<div class="content content-light section" id="Abilities">
   <div class="container">
     <h1>Abilities</h1>
     <app-skills-component></app-skills-component>
   </div>
 </div>
 
-<div class="content content-contrast" id="Hobbies">
+<div class="content content-contrast section" id="Hobbies">
   <div class="container">
     <h1>Hobbies</h1>
     <h3>My Hobbies frequently change, but currently I spend my free time on the following</h3>
@@ -83,7 +97,7 @@
   </div>
 </div>
 
-<div class="footer" id="Contact">
+<div class="footer section" id="Contact">
   <div class="container">
     <h1>Contact</h1>
     <div class="row">

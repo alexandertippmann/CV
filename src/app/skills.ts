@@ -9,6 +9,7 @@ const skills: Skills[] = [
   { name: "CSS", proficiency: 5, action: "none" },
   { name: "JavaScript", proficiency: 5, action: "none" },
   { name: "jQuery", proficiency: 5, action: "none" },
+  { name: "Bootstrap", proficiency: 5, action: "none" },
   { name: "ABAP", proficiency: 5, action: "none" },
   { name: "Julia (Programming Language)", proficiency: 5, action: "none" },
   { name: "Node.js", proficiency: 4, action: "none" },
